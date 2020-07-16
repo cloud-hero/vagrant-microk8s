@@ -26,3 +26,5 @@ microk8s config > /home/vagrant/.kube/config
 usermod -a -G microk8s vagrant
 chown -f -R vagrant /home/vagrant/.kube
 
+curl https://get.docker.com | sh -
+usermod -aG docker vagrant
