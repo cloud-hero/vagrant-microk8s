@@ -56,7 +56,7 @@ metallb-system    Active   112s
 and
 
 ```
-docker ps
+$ docker ps
 ```
 
 and see
