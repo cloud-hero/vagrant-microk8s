@@ -24,7 +24,7 @@ There are installers for Mac, Windows, Debian and CentOS.
 If you have any other Linux Distribution, you can choose the `Linux` tab and download the binary.
 
 After that, you can go to your Downloads forlder and run `sudo mv vagrant /usr/local/bin/` to put
-it somewhere where your terminal can find it.
+it somewhere where your terminal can find it (this step is necessary only if you are using the binary from the `Linux` tab).
 
 After installing, commands like `vagrant version` should work from anywhere.
 
