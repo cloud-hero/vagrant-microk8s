@@ -1,7 +1,7 @@
 # CloudHero Local Dev Environment
 
 ## Prerequisites
-- VirtualBox (tested using VirtualBox 6.0.x).
+- VirtualBox.
 - Vagrant
 - Virtualization enabled on your system (if using Windows).
 
@@ -9,9 +9,7 @@
 
 In order to install VirtualBox, use this link:
 
-https://www.virtualbox.org/wiki/Download_Old_Builds_6_0
-
-And search for `VirtualBox 6.0.4`. There should be installers for any operating system.
+https://www.virtualbox.org/wiki/Downloads
 
 ## Installing Vagrant
 
