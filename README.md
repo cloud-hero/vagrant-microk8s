@@ -35,9 +35,16 @@ For Windows we recommend that you use Power Shell, instead of cmd.
 This Local Dev Environment is created using Vagrant and aims to offer a one-click setup experience to developers.
 
 The steps to creating the VM for the local DEV environment are:
-1. Run `vagrant up`.
-2. Run `vagrant ssh`.
-3. To check that all is up and running you should run:
+1. Download Git:
+    - For Ubuntu/Debian -> `apt install git`
+    - For Windows -> https://git-scm.com/download/win
+2. Clone this repository:
+    - `git clone https://github.com/cloud-hero/vagrant-microk8s.git`
+3. Enter the repo directory:
+    - `cd vagrant-microk8s`
+4. Run `vagrant up`.
+5. Run `vagrant ssh`.
+6. To check that all is up and running you should run:
 ```
 $ kubectl get ns
 ```
