@@ -36,6 +36,7 @@ The steps to creating the VM for the local DEV environment are:
 1. Download Git:
     - For Ubuntu/Debian -> `apt install git`
     - For Windows -> https://git-scm.com/download/win
+    - For MacOS -> https://git-scm.com/download/mac
 2. Clone this repository:
     - `git clone https://github.com/cloud-hero/vagrant-microk8s.git`
 3. Enter the repo directory:
