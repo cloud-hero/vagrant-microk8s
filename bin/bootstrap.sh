@@ -13,7 +13,7 @@ rm -rf helm-v$HELM_VERSION-linux-amd64.tar.gz linux-amd64
 swapoff -a
 sed -i '/swap/d' /etc/fstab
 
-snap install microk8s --classic --channel=1.18/stable
+snap install microk8s --classic --channel=1.19/stable
 
 # Waits until K8s cluster is up
 sleep 15
