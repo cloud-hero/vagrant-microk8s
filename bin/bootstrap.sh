@@ -19,7 +19,7 @@ snap install microk8s --classic --channel=1.19/stable
 sleep 15
 
 microk8s.enable dns
-microk8s.enable metallb:192.168.50.4-192.168.50.4
+microk8s.enable metallb:192.168.50.100-192.168.50.200
 
 mkdir -p /home/vagrant/.kube
 microk8s config > /home/vagrant/.kube/config
