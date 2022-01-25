@@ -29,3 +29,18 @@ chown -f -R vagrant /home/vagrant/.kube
 
 curl https://get.docker.com | sh -
 usermod -aG docker vagrant
+
+# Installing simple self-hosted registry
+docker run -d \
+  --restart=always \
+  --name registry \
+  -v "/certs:/certs" \
+  -e REGISTRY_HTTP_ADDR=0.0.0.0:5000 \
+  -e REGISTRY_HTTP_TLS_CERTIFICATE=/certs/docker.crt \
+  -e REGISTRY_HTTP_TLS_KEY=/certs/docker.key \
+  -p 5000:5000 \
+  registry:2
+
+cp /certs/ca.crt /usr/local/share/ca-certificates/
+update-ca-certificates
+systemctl restart docker

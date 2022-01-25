@@ -6,6 +6,7 @@ Vagrant.configure("2") do |config|
   end
   config.vm.network "private_network", ip: "192.168.56.4"
   config.vm.box = "generic/ubuntu2004"
+  config.vm.synced_folder "certs/", "/certs"
   config.vm.provision "file", source: "#{File.dirname(__FILE__)}/.bash_aliases", destination: "~/.bash_aliases"
   config.vm.provision :shell, path: "#{File.dirname(__FILE__)}/bin/bootstrap.sh"
   config.ssh.username = "vagrant"
